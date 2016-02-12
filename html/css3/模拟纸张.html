@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>css实现纸张效果</title>
+		<link rel="shortcut icon" href="../../images/vince.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../../css/index.css">
+		<style>
+			@font-face{
+				font-family: "xing";
+				src:url("../../font/李旭科毛笔行书.ttf") format('truetype');
+			}
+			
+			html{
+				background: linear-gradient(#80C5B9 20%,#EAC4C4 90%);
+			}
+			.curved_box{
+				width:800px;
+				height: 630px;
+				border: 1px solid #ccc;
+				margin: 0 auto;
+				box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+				position: relative;
+				*zoom: 1;
+				background-color: #f4f39e;
+				background: -webkit-gradient( linear, left top, left bottom, from(#81cbbc), color-stop(2%, #fcf59b));
+				-webkit-background-size: 100% 35px;	
+				top: 20px;
+			}
+
+			.curved_box:before,.curved_box:after{
+				  width: 45%;
+				  height: 50%;
+				  content: ' ';
+				  bottom: 20px;
+				  position: absolute;
+				  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+				  z-index: -1;
+			}
+
+			.curved_box:after{
+				  transform: skew(-15deg) rotate(-6deg);
+				  left: 4%;
+			}
+
+			.curved_box:before{
+				  transform: skew(15deg) rotate(6deg);
+				  right: 4%;
+			}
+
+			.curved_box p{
+				height: auto;
+				max-height: 100%;
+				font-weight: 500;
+				font-size:22px;
+				font-family: 'xing';
+				line-height: 35px;
+				margin: 0;
+				text-align: center;	
+				overflow-y:scroll;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="curved_box">
+			<p></p>
+		</div>
+		<!-- <button value="0">Stop</button> <--></-->
+		<a class="myMusic"></a>
+		<script type="text/javascript" src="../../js/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/music.js"></script>
+		<script type="text/javascript">
+			var str = "",index=0,
+			arr = "最长的电影<br>词曲：周杰伦<br>演唱：周杰伦<br>所属专辑：我很忙<br>发行时间：2007年<br>歌词： <br>我们的开始 是很长的电影<br>放映了三年 我票都还留着<br>冰上的芭蕾 脑海中还在旋转<br>望着你 慢慢忘记你<br> <br>朦胧的时间 我们溜了多远<br>冰刀画的圈 圈起了谁改变<br>如果再重来 会不会稍嫌狼狈<br>爱是不是 不开口才珍贵<br> <br>再给我两分钟<br>让我把记忆结成冰<br>别融化了眼泪<br>你妆都花了 要我怎么记得<br>记得你叫我忘了吧<br>记得你叫我忘了吧<br>你说你会哭 不是因为在乎<br> <br>朦胧的时间 我们溜了多远<br>冰刀画的圈 圈起了谁改变<br>如果再重来 会不会稍嫌狼狈<br>爱是不是 不开口才珍贵<br> <br>再给我两分钟<br>让我把记忆结成冰<br>别融化了眼泪<br>你妆都花了 要我怎么记得<br>记得你叫我忘了吧<br>记得你叫我忘了吧<br>你说你会哭 不是因为在乎<br> <br>再给我两分钟<br>让我把记忆结成冰<br>别融化了眼泪<br>你妆都花了 要我怎么记得<br>记得你叫我忘了吧<br>记得你叫我忘了吧<br>你说你会哭 不是因为在乎";
+			var target = arr.split("");
+			var timer = setInterval(function(){
+				str+=target[index];
+				var height = $('p').height();
+				if((height+35)>630){
+					$("p")[0].scrollTop = $("p")[0].scrollHeight;
+				}
+				if(target[index] == "<"){
+				}else{
+					if(index<arr.length){
+						$("p").html(str);
+					}else{
+						clearInterval(timer);
+					}
+				}
+				index++;
+				
+			},350);
+
+			$("button").on("click",function(e){
+				clearInterval(timer);
+			})
+
+			$(".myMusic").vinceMusic({
+				musicPath:"http://content.12530.com/upload/rings4/20090629/600547019983600902000006889063/000061136189_000019.mp3"
+			});
+		</script>
+	</body>
+</html>

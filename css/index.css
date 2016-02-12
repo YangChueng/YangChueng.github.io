@@ -216,3 +216,23 @@ a{
 		box-shadow: 0 0 5px 5px transparent; 
 	}
 }
+
+/**
+ * 音乐播放部分
+ */
+.play{
+    -webkit-animation: Circle 1s ease-in-out infinite;
+    animation: Circle 1s ease-in-out infinite;
+}
+.pause{
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+@-webkit-keyframes Circle {
+    from{ -webkit-transform: rotate(0deg); }
+    to{-webkit-transform: rotate(360deg);}
+}
+@keyframes Circle {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
