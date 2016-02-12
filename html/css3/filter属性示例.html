@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>filter属性示例</title>
+	<link rel="stylesheet" href="../../css/index.css">
+</head>
+<style>
+	html{
+		height: 100%;
+		min-width: 320px;
+		margin: 0;
+		padding: 0;
+		background:linear-gradient(#B83DBB  0%,#952398 50%);
+		font-family: 'Microsoft YaHei';
+		font-size: 20px;
+	}
+
+	h1{
+		text-align: center;
+		text-shadow: 0 5px 5px #999;
+	}
+
+	.main{
+		width: 100%;
+		height: 100%;
+	}
+
+	.main .container{
+		width: 20%;
+		float: left;
+		margin: 10px;
+	}
+
+	.main:after{
+		content: " ";
+		display: block;
+		overflow: hidden;
+	}
+	
+	.main .container img{
+		width: 100%;
+	}
+
+	.main .container .info p{
+		font-size: 0.7rem;
+		text-align: center;
+		margin: 0;
+	}
+
+	.main .container .info p:first-child{
+		font-weight: bold;
+	}
+
+
+	.main .container .info p:last-child{
+		color: #fff;
+		font-weight: 600;
+		height: 2.5rem;
+		line-height: 2;
+	}
+
+	.none{
+		-webkit-filter:none;
+	}
+
+	.grayscale{
+		-webkit-filter:grayscale(0.7);
+	}
+
+	.sepia{
+		-webkit-filter:sepia(0.6);
+	}
+
+	.saturate{
+		-webkit-filter:saturate(7.8);
+	}
+
+	.hue-rotate{
+		-webkit-filter:hue-rotate(250deg);
+	}
+
+	.invert{
+		-webkit-filter:invert(.9);
+	}
+
+	.opacity{
+		-webkit-filter:opacity(.6);
+	}
+
+	.bright{
+		-webkit-filter:brightness(.6);
+	}
+
+	.contrast{
+		-webkit-filter:contrast(2.5);
+	}
+
+	.blur{
+		-webkit-filter:blur(3px);
+	}
+
+	.shadow{
+		-webkit-filter:drop-shadow(10px 10px 3px #000);
+	}
+</style>
+<body>
+	<h1>filter属性示例</h1>
+	<div class="main">
+		<div class="container">
+			<img src="./../../images/filter-example.jpg" alt="示例图片" class="none">
+			<div class="info">
+				<p>无效果：</p>
+				<p>-webkit-filter:none</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<img src="./../../images/filter-example.jpg" alt="示例图片" class="grayscale">
+			<div class="info">
+				<p>灰度：</p>
+				<p>-webkit-filter:grayscale(0.7)</p>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<img src="./../../images/filter-example.jpg" alt="示例图片" class="sepia">
+			<div class="info">
+				<p>褐色：</p>
+				<p>-webkit-filter:sepia(0.6)</p>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<img src="./../../images/filter-example.jpg" alt="示例图片" class="saturate">
+			<div class="info">
+				<p>饱和度：</p>
+				<p>-webkit-filter:saturate(7.8)</p>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<img src="./../../images/filter-example.jpg" alt="示例图片" class="hue-rotate">
+			<div class="info">
+				<p>色相旋转：</p>
+				<p>-webkit-filter:hue-rotate(250deg)</p>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<img src="./../../images/filter-example.jpg" alt="示例图片" class="invert">
+			<div class="info">
+				<p>反色：</p>
+				<p>-webkit-filter:invert(.9)</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<img src="./../../images/filter-example.jpg" alt="示例图片" class="opacity">
+			<div class="info">
+				<p>透明度：</p>
+				<p>-webkit-filter:opacity(.6)</p>
+			</div>
+		</div>
+		
+		<!-- 亮度-->
+		<div class="container">
+			<img src="./../../images/filter-example.jpg" alt="示例图片" class="bright">
+			<div class="info">
+				<p>亮度：</p>
+				<p>-webkit-filter:brightness(.6)</p>
+			</div>
+		</div>
+		
+		<!-- 对比度-->
+		<div class="container">
+			<img src="./../../images/filter-example.jpg" alt="示例图片" class="contrast">
+			<div class="info">
+				<p>对比度：</p>
+				<p>-webkit-filter:contrast(2.5)</p>
+			</div>
+		</div>
+		
+		<!-- 模糊度-->
+		<div class="container">
+			<img src="./../../images/filter-example.jpg" alt="示例图片" class="blur">
+			<div class="info">
+				<p>模糊度：</p>
+				<p>-webkit-filter:blur(3px)</p>
+			</div>
+		</div>
+		
+		<!-- 阴影-->
+		<div class="container">
+			<img src="./../../images/filter-example.jpg" alt="示例图片" class="shadow">
+			<div class="info">
+				<p>阴影：</p>
+				<p>-webkit-filter:<br>drop-shadow(10px 10px 3px #000)</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

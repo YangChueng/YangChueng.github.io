@@ -17,6 +17,27 @@ a{
 	color: #000;
 }
 
+::-webkit-scrollbar {
+	  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+	  background-color: #81cbbc;
+} /* 滚动条的滑轨背景颜色 */
+
+::-webkit-scrollbar-thumb {
+	  background-color: #F37916; 
+} /* 滑块颜色 */
+
+::-webkit-scrollbar-button {
+	height: 0px;
+	background-color: #fcf59b;
+} /* 滑轨两头的监听按钮颜色 */
+
+::-webkit-scrollbar-corner {
+	background-color: black;
+} 
+
 .main .section:first-child{
 	background:url(../images/s7.jpg) center no-repeat;
 	background-size:100% 100%;
