@@ -1,0 +1,197 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 20px;
+	font-family: 'Microsoft YaHei';
+}
+
+ul,li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration:none;
+	color: #000;
+}
+
+.main .section:first-child{
+	background:url(../images/s7.jpg) center no-repeat;
+	background-size:100% 100%;
+}
+
+.main .section:nth-child(2){
+	background:url(../images/s2.jpg) center no-repeat;
+	background-size:100% 100%;
+}
+
+.main .section:nth-child(3){
+	background:url(../images/s3.jpg) center no-repeat;
+	background-size:100% 100%;
+}
+
+.main .section:nth-child(4){
+	background:url(../images/s4.jpg) center no-repeat;
+	background-size:100% 100%;
+}
+
+.main .section:last-child{
+	background:url(../images/s1.jpg) center no-repeat;
+	background-size:100% 100%;
+}
+
+#menu{	
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	left: 5px;
+	top:25%;
+	z-index: 2;
+	background: #7C7070;
+	width:100px;
+	line-height: 50px;
+	opacity: .3;
+
+}
+
+#menu li{
+	float: left;
+	width: 100%;
+	height: 20%;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+}
+
+#menu li a:hover{
+	cursor: pointer;
+	background: #bc223d;
+}
+
+
+#menu li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+
+/**
+ * 内容区域
+ */
+.main .section .content{
+	width: 40%;
+	height: 80%;
+	border: 1px solid #000;
+	position: absolute;
+	left: 30%;
+	top: 5%;
+	margin: 0 auto;
+	z-index: 2;
+	background: #000;
+	opacity: 0.7;
+	overflow: auto;
+	-webkit-animation:breath 30s infinite linear;
+}
+
+
+.main .section .content a{
+	display: block;
+	width: 100%;
+	height: 50px;
+	color: #fff;
+	line-height: 50px;
+	border-bottom: 1px solid #ccc;
+	letter-spacing: 2px;
+}
+/**
+ * 动画部分
+ */
+
+@-webkit-keyframes breath{
+
+	0%{
+		box-shadow: 0 0 5px 5px transparent; 
+	}
+
+	5%{
+		box-shadow: 0 0 5px 5px  #0A8DE9;
+	}
+
+	10%{
+		box-shadow: 0 0 5px 5px  transparent;
+	}
+
+	15%{
+		box-shadow: 0 0 5px 5px #E90AA2; 
+	}
+
+	20%{
+		box-shadow: 0 0 5px 5px transparent; 
+	}
+
+	25%{
+		box-shadow: 0 0 5px 5px #E90A2E;
+	}
+
+	30%{
+		box-shadow: 0 0 5px 5px transparent;
+	}
+
+	35%{
+		box-shadow: 0 0 5px 5px #0AE90A; 
+	}
+
+	40%{
+		box-shadow: 0 0 5px 5px transparent;
+	}
+
+	45%{
+		box-shadow: 0 0 5px 5px #BCE90A;
+	}
+
+	50%{
+		box-shadow: 0 0 5px 5px transparent;
+	}
+
+	55%{
+		box-shadow: 0 0 5px 5px #E9900A; 
+	}
+
+	60%{
+		box-shadow: 0 0 5px 5px transparent;
+	}
+
+	65%{
+		box-shadow: 0 0 5px 5px #0A87E9;
+	}
+
+	70%{
+		box-shadow: 0 0 5px 5px transparent;
+	}
+
+	75%{
+		box-shadow: 0 0 5px 5px #E90AD7; 
+	}
+
+	80%{
+		box-shadow: 0 0 5px 5px transparent;
+	}
+
+	85%{
+		box-shadow: 0 0 5px 5px #280CF1;
+	}
+
+	90%{
+		box-shadow: 0 0 5px 5px transparent;
+	}
+
+	95%{
+		box-shadow: 0 0 5px 5px #000000;
+	}
+
+	100%{
+		box-shadow: 0 0 5px 5px transparent; 
+	}
+}
