@@ -10,7 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 @font-face {
     font-family: 'wxjr';
-    src:url(../fonts/汉仪大隶书简.TTF) format('truetype');
+    src:url(../fonts/ls.ttf) format('truetype');
 }
 body a{
     transition:0.5s all;
