@@ -73,6 +73,7 @@ body{
 }
 .header-section img {
   margin-top: 7em;
+  border-radius: 50%;
 }
 .header-section h1 {
   font-family: 'Nunito-Bold';
