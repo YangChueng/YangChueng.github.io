@@ -67,7 +67,7 @@ body{
   background-color: black;
 }
 .header-section {
-  background: #deecdf;
+  background: linear-gradient(#deecdf 0%,#A4E2A8 80%);
   text-align: center;
     min-height: 500px;
 }
@@ -192,7 +192,7 @@ font-size: 2em;
 }
 
 .social-icons {
-	background:#fff;
+	background: linear-gradient(#fff 0%,#C1B7B7 100%);
 	padding: 4em 0;
 
 }
@@ -204,113 +204,48 @@ font-size: 2em;
   text-align: center;
   margin-bottom:2em;
 }
-.face p {
-  font-size: 3em;
-  color: #B4BEB9;
-  font-weight: 500;
-  margin: 0 9px;
- 
-}
-.face h4 {
-  font-size: 0.9em;
-  color: #393b3a;
-  font-weight: 500;
-  text-transform: capitalize;
-  margin-top: 1.2em;
-  cursor: pointer;
+
+.social-icons h4{
   text-align: center;
+  font-size: 1.8em;
+  color: #00CFBD;
+  text-shadow: 0 2px 2px #C78994
 }
 
-i.facebook {
-  width: 64px;
-  height: 64px;
-  background: url(../images/img-sprite.png)no-repeat 0px 0px;
-  float: left;
-  vertical-align: middle;
-    margin: 0 10px;
+.social-icons p.pj-info{
+    font-family: 'Microsoft YaHei';
+    padding: 1em 0;
+    font-size: 1.1em;
+    text-indent: 2em;
 }
-i.twitter{
-   width: 64px;
-  height: 64px;
-  background: url(../images/img-sprite.png)no-repeat -64px 0px;
-  float: left;
-  vertical-align: middle;
-    margin: 0 10px;
+
+.social-icons p.pj-job{
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
 }
-i.google {
-   width: 64px;
-  height: 64px;
-  background: url(../images/img-sprite.png)no-repeat -128px 0px;
-  float: left;
-  vertical-align: middle;
-    margin: 0 10px;
-}
-i.beh {
-  width: 64px;
-  height: 64px;
-  background: url(../images/img-sprite.png)no-repeat -192px 0px;
-  float: left;
-  vertical-align: middle;
-    margin: 0 10px;
-}
+
+
 .contact-section {
-  padding: 4em 0;
+  padding: 2em 0;
   background: #deecdf;
- 
- }
+  }
 .contact-section h3 {
     font-family: 'Nunito-Bold';
   font-size: 2.5em;
   text-transform: capitalize;
   color: #393b3a;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 
 }
-.contact-details form input[type="text"],.contact-details form textarea {
-	width: 100%;
-	padding: 1.5em 1em;
-	border: 1px solid #7ca17f;
-	font-size: 1.1em;
-	margin-bottom: 1.2em;
-	color: #Aac8ac;
-	outline: none;
-	background:transparent;
-	font-weight: 600;
+
+.contact-section .info{
+  padding-left: 5%;
+  font-family: 'Nunito-Bold';
+  font-size: 1.2em;
 }
-.contact-details form textarea {
-	height: 244px;
-	resize: none;
-	width: 100%;
-}
-.contact-right{
-	text-align:right;
-}
-.contact-details input[type="submit"] {
-	background: #393b3a;
-	padding: 1em 2em;
-	border: none;
-	font-size: 1em;
-	margin: 0.5em 0 0 0;
-	color: #fff;
-	outline: none;
-	font-weight: 600;
-	border-radius:5px;
-	transition: 0.5s all;
-	-webkit-transition: 0.5s all;
-	-moz-transition: 0.5s all;
-	-o-transition: 0.5s all;
-	-ms-transition: 0.5s all;
-}
-.contact-details input[type="submit"]:hover {
-  color: #fff;
-  background: rgb(0, 207, 189);
-}
-.google-map iframe {
-  width: 100%;
-  height: 500px;
-  border: 0;
-}
+
 .footer-section{
 	padding:2em 0;
 	text-align:center;
@@ -739,3 +674,4 @@ span.glyphicon.glyphicon-triangle-bottom {
 .contact-details input[type="submit"] {
   font-size: 0.8em;
 }
+
