@@ -20,49 +20,64 @@
     <link rel="stylesheet" href="css/ElementStyle.css">
     <script src="js/LanHe_SheBeiPanDuan.js"></script>
     <script src="js/imgLoader.js"></script>
+    <link rel="prefetch" href="./images/1.jpg" />
+    <link rel="prefetch" href="./images/2.jpg" />
+    <link rel="prefetch" href="./images/3.jpg" />
+    <link rel="prefetch" href="./images/4.jpg" />
+    <link rel="prefetch" href="./images/5.jpg" />
+    <link rel="prefetch" href="./images/6.jpg" />
+    <link rel="prefetch" href="./images/7.jpg" />
+    <link rel="prefetch" href="./images/8.jpg" />
+    <link rel="prefetch" href="./images/9.jpg" />
+    <link rel="prefetch" href="./images/10.jpg" />
     <title>小涵</title>
     <script type="text/javascript">
-        var imagesArr = ["./images/1.jpg", "./images/2.jpg", "./images/3.jpg","./images/4.jpg", "./images/5.jpg", "./images/6.jpg", "./images/7.jpg", "./images/8.jpg", "./images/9.jpg", "./images/10.jpg"];
-        var animations = new Array();
-        animations[0] = "animate1";
-        animations[1] = "animate12";
-        animations[2] = "animate2";
-        animations[3] = "animate3";
-        animations[4] = "animate10";
-        animations[5] = "animate5";
-        animations[6] = "animate6";
-        animations[7] = "animate7";
-        animations[8] = "animate4";
-        animations[9] = "animate11";
-        animations[10] = "animate13";
-        animations[11] = "animate16";
-        animations[12] = "animate15";
-        animations[13] = "animate14";
-        animations[14] = "animate8";
-        animations[15] = "animate9";
-        var i = 1;
-        var cjType = 6;
-        var imgCount = imagesArr.length;
-        var speed = 1;
-        var timer = null;
-        var alpha = 0;
-        var alphaF = 0;
-        var timerF = null;
-        window.setTimeout(function() {
-            animationEnd()
-        }, 0);
-        window.setTimeout(function() {
-            createHtmlElement("0%", "yinhe", "0%")
-        }, 0);
-        window.setTimeout(function() {
-            createHtmlElement("20%", "xingXing3", "25%")
-        }, 500);
-        window.setTimeout(function() {
-            createHtmlElement("60%", "xingXing2", "20%")
-        }, 1000);
-        window.setTimeout(function() {
-            createHtmlElement("80%", "xingXing1", "10%")
-        }, 1500);
+    window.onload = function () {
+        imgLoader(["./images/1.jpg", "./images/2.jpg", "./images/3.jpg", "./images/4.jpg", "./images/5.jpg", "./images/6.jpg", "./images/7.jpg", "./images/8.jpg", "./images/9.jpg", "./images/10.jpg"], function (percentage) {
+            console.log(percentage)
+        });
+    };
+    var imagesArr = ["./images/1.jpg", "./images/2.jpg", "./images/3.jpg", "./images/4.jpg", "./images/5.jpg", "./images/6.jpg", "./images/7.jpg", "./images/8.jpg", "./images/9.jpg", "./images/10.jpg"];
+    var animations = new Array();
+    animations[0] = "animate1";
+    animations[1] = "animate12";
+    animations[2] = "animate2";
+    animations[3] = "animate3";
+    animations[4] = "animate10";
+    animations[5] = "animate5";
+    animations[6] = "animate6";
+    animations[7] = "animate7";
+    animations[8] = "animate4";
+    animations[9] = "animate11";
+    animations[10] = "animate13";
+    animations[11] = "animate16";
+    animations[12] = "animate15";
+    animations[13] = "animate14";
+    animations[14] = "animate8";
+    animations[15] = "animate9";
+    var i = 1;
+    var cjType = 6;
+    var imgCount = imagesArr.length;
+    var speed = 1;
+    var timer = null;
+    var alpha = 0;
+    var alphaF = 0;
+    var timerF = null;
+    window.setTimeout(function() {
+        animationEnd()
+    }, 0);
+    window.setTimeout(function() {
+        createHtmlElement("0%", "yinhe", "0%")
+    }, 0);
+    window.setTimeout(function() {
+        createHtmlElement("20%", "xingXing3", "25%")
+    }, 500);
+    window.setTimeout(function() {
+        createHtmlElement("60%", "xingXing2", "20%")
+    }, 1000);
+    window.setTimeout(function() {
+        createHtmlElement("80%", "xingXing1", "10%")
+    }, 1500);
     </script>
 </head>
 
@@ -78,35 +93,35 @@
             <img id="image" src="./images/5.jpg">
         </div>
         <script>
-            //初始化背景图片
-            setBackGroundImage("wuyexingkong1.jpg");
-            setDivBackGroundImage("wuyexingkong2.jpg");
-            document.getElementById('audioPlay').play();
-            document.addEventListener("WeixinJSBridgeReady", function() {
-                WeixinJSBridge.invoke('getNetworkType', {}, function(e) {
-                    document.getElementById('audioPlay').play();
-                });
-            }, false);
-            var sb = ToEditProduction();
-            if (sb == 1) {
-                document.getElementById("box").style.webkitAnimationName = animations[0];
-            } else {
-                document.getElementById("box").style.animationName = animations[0];
-            }
-            var el = document.getElementById("image");
-            el.hidden = true;
-            setTimeout(function() {
-                el.hidden = false;
-                var height = document.body.clientHeight;
-                el.style.top = (height - el.clientHeight) / 2 + "px";
-                console.log('height ：', el.clientHeight);
-            }, 500);
+        //初始化背景图片
+        setBackGroundImage("wuyexingkong1.jpg");
+        setDivBackGroundImage("wuyexingkong2.jpg");
+        document.getElementById('audioPlay').play();
+        document.addEventListener("WeixinJSBridgeReady", function() {
+            WeixinJSBridge.invoke('getNetworkType', {}, function(e) {
+                document.getElementById('audioPlay').play();
+            });
+        }, false);
+        var sb = ToEditProduction();
+        if (sb == 1) {
+            document.getElementById("box").style.webkitAnimationName = animations[0];
+        } else {
+            document.getElementById("box").style.animationName = animations[0];
+        }
+        var el = document.getElementById("image");
+        el.hidden = true;
+        setTimeout(function() {
+            el.hidden = false;
+            var height = document.body.clientHeight;
+            el.style.top = (height - el.clientHeight) / 2 + "px";
+            console.log('height ：', el.clientHeight);
+        }, 500);
 
-            //更换背景图
-            var bgImg = 1;
-            window.setInterval(function() {
-                changeBgImage()
-            }, 10000);
+        //更换背景图
+        var bgImg = 1;
+        window.setInterval(function() {
+            changeBgImage()
+        }, 10000);
         </script>
     </div>
     </div>
