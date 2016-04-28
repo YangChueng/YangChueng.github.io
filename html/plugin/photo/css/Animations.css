@@ -1,0 +1,1239 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* animate 背景淡入淡出*/
+@-webkit-keyframes bodybg {
+	 0% {
+		 opacity:0;
+		}
+	
+			
+	 100% {
+		 opacity:1;
+	}
+}
+
+ @keyframes bodybg {
+  0% {
+		 opacity:0;
+		}
+	
+			
+	 100% {
+		 opacity:1;
+	}
+}
+
+/* animate 星空若隐若现*/
+@-webkit-keyframes xingxing {
+	 0% {
+		 opacity:0.01;
+		 transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		}
+	
+			
+	 100% {
+		 opacity:1;
+		 transform: scale(1.2,1.2);
+		-webkit-transform: scale(1.2,1.2);
+	}
+}
+
+ @keyframes xingxing {
+   0% {
+		 opacity:0.01;
+		 transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		}
+	
+			
+	 100% {
+		 opacity:1;
+		 transform: scale(1.2,1.2);
+		-webkit-transform: scale(1.2,1.2);
+	}
+}
+
+
+/* animate 音乐播放旋转360°*/
+@-webkit-keyframes musicPlay {
+	 0% {
+		 transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		 
+		}
+	
+			
+	 100% {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+ @keyframes musicPlay {
+  0% {
+	 	transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		}
+	
+			
+	 100% {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+
+/* animate 光束旋转°*/
+@-webkit-keyframes guangShu {
+	 0% {
+		 opacity:1;
+		 transform: rotate(-5deg);
+		-webkit-transform: rotate(-5deg);
+		 
+		}
+	50% {
+		opacity:0.4;
+		 transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		 
+		}
+	
+			
+	 100% {
+		 opacity:1;
+		transform: rotate(5deg);
+		-webkit-transform: rotate(5deg);
+	}
+}
+
+ @keyframes guangShu {
+    0% {
+		 opacity:1;
+		 transform: rotate(-5deg);
+		-webkit-transform: rotate(-5deg);
+		 
+		}
+	50% {
+		opacity:0.4;
+		 transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		 
+		}
+	
+			
+	 100% {
+		 opacity:1;
+		transform: rotate(5deg);
+		-webkit-transform: rotate(5deg);
+	}
+}
+
+
+
+/* animate 云朵漂浮*/
+@-webkit-keyframes cloudSmall {
+   0% {
+	  left:-28%;
+  }
+  
+  100% {
+	  left:100%;
+  }
+}
+
+@keyframes cloudSmall {
+  0% {
+	  left:-28%;
+  }
+  
+  100% {
+	  left:100%;
+  }
+}
+
+
+/* animate 云朵漂浮*/
+@-webkit-keyframes cloudBig {
+   0% {
+	  left:-38%;
+  }
+  
+  100% {
+	  left:100%;
+  }
+}
+
+@keyframes cloudBig {
+  0% {
+	  left:-38%;
+  }
+  
+  100% {
+	  left:100%;
+  }
+}
+
+/* animate 降落 不旋转*/
+@-webkit-keyframes topToDown {
+	 0% {
+	 	 top: -8%;
+ 
+		}
+		
+	 100% {
+		 left:10%;
+	 	top: 108%;
+
+	}
+}
+
+ @keyframes topToDown {
+  0% {
+	 	 top: -8%;
+ 
+		}
+		
+	 100% {
+		 left:10%;
+	 	top: 108%;
+
+	}
+}
+
+
+/* animate 降落 不旋转*/
+@-webkit-keyframes yuditopToDown {
+	 0% {
+	 	 top: -8%;
+ 
+		}
+		
+	 100% {
+	 	top: 108%;
+
+	}
+}
+
+ @keyframes yuditopToDown {
+  0% {
+	 	 top: -8%;
+ 
+		}
+		
+	 100% {
+	 	top: 108%;
+
+	}
+}
+
+
+
+/* animate 气泡上升*/
+@-webkit-keyframes qiPao {
+	 0% {
+	 	 top: 108%;
+		 left:10%;
+		 transform: scale(0.7,0.7) rotate(0deg);
+		-webkit-transform:scale(0.7,0.7)  rotate(0deg);
+		 
+		}
+	
+			
+	 100% {
+		left:80%;
+	 	top: -8%;
+		transform:scale(1.0,1.0)  rotate(90deg);
+		-webkit-transform:scale(1.0,1.0)  rotate(90deg);
+	}
+}
+
+ @keyframes qiPao {
+ 0% {
+	 	 top: 108%;
+		 left:10%;
+		 transform: scale(0.7,0.7) rotate(0deg);
+		-webkit-transform:scale(0.7,0.7)  rotate(0deg);
+		 
+		}
+	
+			
+	 100% {
+		left:80%;
+	 	top: -8%;
+		transform:scale(1.0,1.0)  rotate(90deg);
+		-webkit-transform:scale(1.0,1.0)  rotate(90deg);
+	}
+}
+
+/* animate 花朵降落*/
+@-webkit-keyframes flowerSmall {
+	 0% {
+	 	 top: -8%;
+		 transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		 
+		}
+	
+			
+	 100% {
+		 left:10%;
+	 	top: 108%;
+		transform: rotate(1080deg);
+		-webkit-transform: rotate(1080deg);
+	}
+}
+
+ @keyframes flowerSmall {
+  0% {
+	 	top: -8%;
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		}
+	
+			
+	 100% {
+	 	top: 108%;
+		transform: rotate(1080deg);
+		-webkit-transform: rotate(1080deg);
+	}
+}
+
+
+@-webkit-keyframes flowerTwo {
+	% {
+	 	top: -8%;
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		}
+	
+			
+	 100% {
+		 left:10%;
+	 	top: 108%;
+		transform: rotate(1080deg);
+		-webkit-transform: rotate(1080deg);
+	}
+}
+
+ @keyframes flowerTwo {
+  % {
+	 	top: -8%;
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		}
+	
+			
+	 100% {
+		 left:10%;
+	 	top: 108%;
+		transform: rotate(1080deg);
+		-webkit-transform: rotate(1080deg);
+	}
+}
+
+@-webkit-keyframes flowerThree {
+	% {
+	 	top: -8%;
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+            
+		}
+	
+			
+	 100% {
+		 left:70%;
+	 	top: 108%;
+		transform: rotate(1080deg);
+		-webkit-transform: rotate(1080deg);
+	}
+}
+
+ @keyframes flowerThree {
+  % {
+	 	top: -8%;
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		}
+	
+			
+	 100% {
+		 left:70%;
+	 	top: 108%;
+		transform: rotate(1080deg);
+		-webkit-transform: rotate(1080deg);
+	}
+}
+
+
+/* animate1  1、中心从小50%到大100%，停留1秒，渐隐退出。*/
+@-webkit-keyframes animate1 {
+   0% {
+		opacity: 0;
+		-webkit-transform: scale(0.5) rotatex(0);
+            transform: scale(0.5) rotatex(0);
+		}
+
+   50% {
+	  opacity: 1;
+      -webkit-transform: scale(1);
+            transform: scale(1);
+   }
+   70% {
+	  opacity: 1;
+      -webkit-transform: scale(1);
+            transform: scale(1);
+   }
+   100% {
+	 opacity: 0;
+     -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+   }
+}
+@keyframes animate1 {
+    0% {
+		opacity: 0;
+		-webkit-transform: scale(0.5) rotatex(0);
+            transform: scale(0.5) rotatex(0);
+		}
+
+   50% {
+	  opacity: 1;
+      -webkit-transform: scale(1);
+            transform: scale(1);
+   }
+   70% {
+	  opacity: 1;
+      -webkit-transform: scale(1);
+            transform: scale(1);
+   }
+   100% {
+	 opacity: 0;
+     -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+   }
+}
+
+/* animate2  2、从左到右，停留1秒，从右退出。*/
+@-webkit-keyframes animate2 {
+  0% {
+    -webkit-transform: translate3d(-120%, 0, 0);
+            transform: translate3d(-120%, 0, 0);
+  }
+  
+  40% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  
+  60% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(120%, 0, 0);
+            transform: translate3d(120%, 0, 0);
+  }
+}
+@keyframes animate2 {
+   0% {
+    -webkit-transform: translate3d(-120%, 0, 0);
+            transform: translate3d(-120%, 0, 0);
+  }
+  
+  40% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  
+  60% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(120%, 0, 0);
+            transform: translate3d(120%, 0, 0);
+  }
+}
+
+
+
+/* animate3  3、从左下偏90度到右（左下为旋转点），停留1秒，从右退出。*/
+@-webkit-keyframes animate3 {
+  0% {
+    -webkit-transform: translate3d(-100%, 100%, 0) rotate(-90deg);;
+            transform: translate3d(-100%, 100%, 0) rotate(-90deg);;
+  }
+  
+  50% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+            transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  
+  70% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+            transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0) rotate(0deg);
+            transform: translate3d(100%, 0, 0) rotate(0deg);
+  }
+}
+@keyframes animate3 {
+    0% {
+    -webkit-transform: translate3d(-100%, 100%, 0) rotate(-90deg);;
+            transform: translate3d(-100%, 100%, 0) rotate(-90deg);;
+  }
+  
+  50% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+            transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  
+  70% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+            transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0) rotate(0deg);
+            transform: translate3d(100%, 0, 0) rotate(0deg);
+  }
+}
+
+
+/* animate4  4、从右下偏90度到左（右下为旋转点），停留1秒，从左退出。*/
+@-webkit-keyframes animate4 {
+  0% {
+    -webkit-transform: translate3d(100%, 100%, 0) rotate(90deg);;
+            transform: translate3d(100%, 100%, 0) rotate(90deg);;
+  }
+  
+  50% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+            transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  
+  70% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+            transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0) rotate(0deg);
+            transform: translate3d(-100%, 0, 0) rotate(0deg);
+  }
+}
+@keyframes animate4 {
+    0% {
+    -webkit-transform: translate3d(100%, 100%, 0) rotate(90deg);;
+            transform: translate3d(100%, 100%, 0) rotate(90deg);;
+  }
+  
+  50% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+            transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  
+  70% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+            transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0) rotate(0deg);
+            transform: translate3d(-100%, 0, 0) rotate(0deg);
+  }
+}
+
+
+/* animate5  5、从左上渐隐出现旋转360到屏幕，从中心缩小退出。*/
+@-webkit-keyframes animate5 {
+  0% {
+	  opacity: 0;
+    -webkit-transform: translate3d(-100%, -100%, 0) rotate(0deg) scale(0,0);
+            transform: translate3d(-100%, -100%, 0) rotate(0deg) scale(0,0);
+  }
+  
+  40% {
+	   opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) rotate(360deg) scale(1,1);
+            transform: translate3d(0, 0, 0) rotate(360deg) scale(1,1);
+  }
+  
+  70% {
+	   opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) rotate(360deg) scale(1,1);
+            transform: translate3d(0, 0, 0) rotate(360deg) scale(1,1);
+  }
+
+  100% {
+	   opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) rotate(540deg) scale(0,0);
+            transform: translate3d(0, 0, 0) rotate(540deg) scale(0,0);
+  }
+}
+@keyframes animate5 {
+    0% {
+	  opacity: 0;
+    -webkit-transform: translate3d(-100%, -100%, 0) rotate(0deg) scale(0,0);
+            transform: translate3d(-100%, -100%, 0) rotate(0deg) scale(0,0);
+  }
+  
+  40% {
+	   opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) rotate(360deg) scale(1,1);
+            transform: translate3d(0, 0, 0) rotate(360deg) scale(1,1);
+  }
+  
+  70% {
+	   opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) rotate(360deg) scale(1,1);
+            transform: translate3d(0, 0, 0) rotate(360deg) scale(1,1);
+  }
+
+  100% {
+	   opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) rotate(540deg) scale(0,0);
+            transform: translate3d(0, 0, 0) rotate(540deg) scale(0,0);
+  }
+}
+
+/* animate6  6、从150到屏幕100，360旋转缩小退出。*/
+@-webkit-keyframes animate6 {
+   0% {
+	    opacity:0;
+    -webkit-transform: scale(1.5,1.5) rotate(0deg);
+            transform: scale(1.5,1.5) rotate(0deg);
+  }
+  
+  5% {
+	    opacity:1;
+    -webkit-transform: scale(1.5,1.5) rotate(0deg);
+            transform: scale(1.5,1.5) rotate(0deg);
+  }
+  
+  50% {
+	   opacity:1;
+    -webkit-transform: scale(1,1) rotate(0deg);
+            transform: scale(1,1) rotate(0deg);
+  }
+  
+  70% {
+	  opacity:1;
+    -webkit-transform:  scale(1,1) rotate(0deg);
+            transform:  scale(1,1) rotate(0deg);
+  }
+
+
+  100% {
+	   opacity:1;
+    -webkit-transform:  scale(0,0) rotate(180deg);
+            transform:  scale(0,0) rotate(180deg);
+  }
+}
+@keyframes animate6 {
+  0% {
+	    opacity:0;
+    -webkit-transform: scale(1.5,1.5) rotate(0deg);
+            transform: scale(1.5,1.5) rotate(0deg);
+  }
+  
+  5% {
+	    opacity:1;
+    -webkit-transform: scale(1.5,1.5) rotate(0deg);
+            transform: scale(1.5,1.5) rotate(0deg);
+  }
+  
+  50% {
+	   opacity:1;
+    -webkit-transform: scale(1,1) rotate(0deg);
+            transform: scale(1,1) rotate(0deg);
+  }
+  
+  70% {
+	  opacity:1;
+    -webkit-transform:  scale(1,1) rotate(0deg);
+            transform:  scale(1,1) rotate(0deg);
+  }
+
+
+  100% {
+	   opacity:1;
+    -webkit-transform:  scale(0,0) rotate(180deg);
+            transform:  scale(0,0) rotate(180deg);
+  }
+}
+
+
+/* animate7  7、从右下向左上，到全屏后，从左上退出*/
+@-webkit-keyframes animate7 {
+   0% {
+    -webkit-transform: translate3d(100%, 100%, 0) ;
+            transform: translate3d(100%, 100%, 0) ;
+ 	}
+  
+  40% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  
+  60% {
+    -webkit-transform: translate3d(0, 0, 0) ;
+            transform: translate3d(0, 0, 0) ;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, -100%, 0) ;
+            transform: translate3d(-100%, -100%, 0) ;
+  }
+}
+@keyframes animate7 {
+   0% {
+    -webkit-transform: translate3d(100%, 100%, 0) ;
+            transform: translate3d(100%, 100%, 0) ;
+ 	}
+  
+  40% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  
+  60% {
+    -webkit-transform: translate3d(0, 0, 0) ;
+            transform: translate3d(0, 0, 0) ;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, -100%, 0) ;
+            transform: translate3d(-100%, -100%, 0) ;
+  }
+}
+
+
+/* animate8  8、从150到屏幕100，从左上缩小退出。*/
+@-webkit-keyframes animate8 {
+  0% {
+	  opacity:0;
+    -webkit-transform:translate3d(0, 0, 0) scale(1.5,1.5);
+            transform:translate3d(0, 0, 0) scale(1.5,1.5);
+ 	}
+	
+  5% {
+	  opacity:1;
+    -webkit-transform:translate3d(0, 0, 0) scale(1.5,1.5);
+            transform:translate3d(0, 0, 0) scale(1.5,1.5);
+ 	}
+  
+  50% {
+	  opacity:1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1,1);
+            transform: translate3d(0, 0, 0) scale(1,1);
+  }
+  
+  70% {
+	  opacity:1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1,1);
+            transform: translate3d(0, 0, 0) scale(1,1);
+  }
+
+  100% {
+	  opacity:1;
+    -webkit-transform: translate3d(-100%, -100%, 0)  scale(0,0);
+            transform: translate3d(-100%, -100%, 0)  scale(0,0);
+  }
+}
+@keyframes animate8 {
+  0% {
+	  opacity:0;
+    -webkit-transform:translate3d(0, 0, 0) scale(1.5,1.5);
+            transform:translate3d(0, 0, 0) scale(1.5,1.5);
+ 	}
+	
+  5% {
+	  opacity:1;
+    -webkit-transform:translate3d(0, 0, 0) scale(1.5,1.5);
+            transform:translate3d(0, 0, 0) scale(1.5,1.5);
+ 	}
+  
+  50% {
+	  opacity:1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1,1);
+            transform: translate3d(0, 0, 0) scale(1,1);
+  }
+  
+  70% {
+	  opacity:1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1,1);
+            transform: translate3d(0, 0, 0) scale(1,1);
+  }
+
+  100% {
+	  opacity:1;
+    -webkit-transform: translate3d(-100%, -100%, 0)  scale(0,0);
+            transform: translate3d(-100%, -100%, 0)  scale(0,0);
+  }
+}
+
+/* animate9  9、从150到屏幕100，从右上缩小退出。*/
+@-webkit-keyframes animate9 {
+ 0% {
+	  opacity:0;
+    -webkit-transform:translate3d(0, 0, 0) scale(1.5,1.5);
+            transform:translate3d(0, 0, 0) scale(1.5,1.5);
+ 	}
+	
+  5% {
+	  opacity:1;
+    -webkit-transform:translate3d(0, 0, 0) scale(1.5,1.5);
+            transform:translate3d(0, 0, 0) scale(1.5,1.5);
+ 	}
+  
+  50% {
+	  opacity:1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1,1);
+            transform: translate3d(0, 0, 0) scale(1,1);
+  }
+  
+  70% {
+	  opacity:1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1,1);
+            transform: translate3d(0, 0, 0) scale(1,1);
+  }
+
+  100% {
+	  opacity:1;
+    -webkit-transform: translate3d(100%, -100%, 0)  scale(0,0);
+            transform: translate3d(100%, -100%, 0)  scale(0,0);
+  }
+}
+
+@keyframes animate9 {
+  0% {
+	  opacity:0;
+    -webkit-transform:translate3d(0, 0, 0) scale(1.5,1.5);
+            transform:translate3d(0, 0, 0) scale(1.5,1.5);
+ 	}
+	
+  5% {
+	  opacity:1;
+    -webkit-transform:translate3d(0, 0, 0) scale(1.5,1.5);
+            transform:translate3d(0, 0, 0) scale(1.5,1.5);
+ 	}
+  
+  50% {
+	  opacity:1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1,1);
+            transform: translate3d(0, 0, 0) scale(1,1);
+  }
+  
+  70% {
+	  opacity:1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1,1);
+            transform: translate3d(0, 0, 0) scale(1,1);
+  }
+
+  100% {
+	  opacity:1;
+    -webkit-transform: translate3d(100%, -100%, 0)  scale(0,0);
+            transform: translate3d(100%, -100%, 0)  scale(0,0);
+  }
+}
+
+/* animate10  10、从右斜到左，停留1秒，从左斜退出。*/
+@-webkit-keyframes animate10 {
+    0% {
+    -webkit-transform: translate3d(120%, 0, 0) rotate(-30deg) scale(0.9,0.9);
+            transform: translate3d(120%, 0, 0) rotate(-30deg) scale(0.9,0.9);
+ 	}
+  
+  40% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-30deg) scale(0.9,0.9);
+            transform: translate3d(0, 0, 0) rotate(-30deg) scale(0.9,0.9);
+  }
+  
+  60% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-30deg) scale(0.9,0.9);
+            transform: translate3d(0, 0, 0) rotate(-30deg) scale(0.9,0.9);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-120%, 0, 0)  rotate(-30deg) scale(0.9,0.9);
+            transform: translate3d(-120%, 0, 0)  rotate(-30deg) scale(0.9,0.9);
+  }
+}
+@keyframes animate10 {
+    0% {
+    -webkit-transform: translate3d(120%, 0, 0) rotate(-30deg) scale(0.9,0.9);
+            transform: translate3d(120%, 0, 0) rotate(-30deg) scale(0.9,0.9);
+ 	}
+  
+  40% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-30deg) scale(0.9,0.9);
+            transform: translate3d(0, 0, 0) rotate(-30deg) scale(0.9,0.9);
+  }
+  
+  60% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-30deg) scale(0.9,0.9);
+            transform: translate3d(0, 0, 0) rotate(-30deg) scale(0.9,0.9);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-120%, 0, 0)  rotate(-30deg)  scale(0.9,0.9);
+            transform: translate3d(-120%, 0, 0)  rotate(-30deg) scale(0.9,0.9);
+  }
+}
+
+
+/* animate11  11、从左斜到右，停留1秒，从右斜退出。*/
+@-webkit-keyframes animate11 {
+    0% {
+    -webkit-transform: translate3d(-120%, 0, 0) rotate(30deg) scale(0.9,0.9);
+            transform: translate3d(-120%, 0, 0) rotate(30deg) scale(0.9,0.9) ;
+ 	}
+  
+  40% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(30deg) scale(0.9,0.9);
+            transform: translate3d(0, 0, 0) rotate(30deg) scale(0.9,0.9);
+  }
+  
+  60% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(30deg) scale(0.9,0.9);
+            transform: translate3d(0, 0, 0) rotate(30deg) scale(0.9,0.9);
+  }
+
+  100% {
+    -webkit-transform: translate3d(120%, 0, 0)  rotate(30deg) scale(0.9,0.9);
+            transform: translate3d(120%, 0, 0)  rotate(30deg) scale(0.9,0.9);
+  }
+}
+@keyframes animate11 {
+    0% {
+    -webkit-transform: translate3d(-120%, 0, 0) rotate(30deg) scale(0.9,0.9);
+            transform: translate3d(-120%, 0, 0) rotate(30deg)  scale(0.9,0.9);
+ 	}
+  
+  40% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(30deg) scale(0.9,0.9);
+            transform: translate3d(0, 0, 0) rotate(30deg) scale(0.9,0.9);
+  }
+  
+  60% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(30deg) scale(0.9,0.9);
+            transform: translate3d(0, 0, 0) rotate(30deg) scale(0.9,0.9);
+  }
+
+  100% {
+    -webkit-transform: translate3d(120%, 0, 0)  rotate(30deg) scale(0.9,0.9);
+            transform: translate3d(120%, 0, 0)  rotate(30deg) scale(0.9,0.9);
+  }
+}
+
+
+/* animate12 12、中心图片倒置，从中间旋转180度，全屏，停留1秒，从右退出。*/
+@-webkit-keyframes animate12 {
+	0% {
+		opacity:0;
+    -webkit-transform:  translate3d(0, 0, 0)  rotateX(180deg) ;
+            transform:  translate3d(0, 0, 0)  rotateX(180deg) ;
+ 	}
+   10% {
+	   opacity:1;
+    -webkit-transform:  translate3d(0, 0, 0)  rotateX(180deg) ;
+            transform:  translate3d(0, 0, 0)  rotateX(180deg) ;
+ 	}
+  
+  50% {
+	   opacity:1;
+    -webkit-transform:  translate3d(0, 0, 0)  rotateX(0deg) ;
+            transform:  translate3d(0, 0, 0)  rotateX(0deg) ;
+  }
+  
+  70% {
+	   opacity:1;
+    -webkit-transform:  translate3d(0, 0, 0)  rotateX(0deg) ;
+            transform:  translate3d(0, 0, 0)  rotateX(0deg) ;
+  }
+
+  100% {
+	   opacity:1;
+    -webkit-transform:  translate3d(120%, 0, 0)  rotateX(0deg) ;
+            transform:  translate3d(120%, 0, 0)  rotateX(0deg) ;
+  }
+}
+@keyframes animate12 {
+   0% {
+		opacity:0;
+    -webkit-transform:  translate3d(0, 0, 0)  rotateX(180deg) ;
+            transform:  translate3d(0, 0, 0)  rotateX(180deg) ;
+ 	}
+   10% {
+	   opacity:1;
+    -webkit-transform:  translate3d(0, 0, 0)  rotateX(180deg) ;
+            transform:  translate3d(0, 0, 0)  rotateX(180deg) ;
+ 	}
+  
+  50% {
+	   opacity:1;
+    -webkit-transform:  translate3d(0, 0, 0)  rotateX(0deg) ;
+            transform:  translate3d(0, 0, 0)  rotateX(0deg) ;
+  }
+  
+  70% {
+	   opacity:1;
+    -webkit-transform:  translate3d(0, 0, 0)  rotateX(0deg) ;
+            transform:  translate3d(0, 0, 0)  rotateX(0deg) ;
+  }
+
+  100% {
+	   opacity:1;
+    -webkit-transform:  translate3d(120%, 0, 0)  rotateX(0deg) ;
+            transform:  translate3d(120%, 0, 0)  rotateX(0deg) ;
+  }
+}
+
+/* animate13 13、从上入平移出现，居中一秒，从下出。*/
+@-webkit-keyframes animate13 {
+    0% {
+		opacity:1;
+    -webkit-transform:  translate3d(0, -100%, 0) ;
+            transform:  translate3d(0, -100%, 0);
+ 	}
+  
+ 
+  40% {
+	  opacity:1;
+    -webkit-transform:  translate3d(0, 0, 0) ;
+            transform:  translate3d(0, 0, 0) ;
+  }
+ 
+  60% {
+	  opacity:1;
+    -webkit-transform:  translate3d(0, 0, 0) ;
+            transform:  translate3d(0, 0, 0) ;
+  }
+
+  100% {
+	  opacity:1;
+    -webkit-transform:  translate3d(0, 100%, 0) ;
+            transform:  translate3d(0, 100%, 0) ;
+  }
+}
+@keyframes animate13{
+    0% {
+		opacity:1;
+    -webkit-transform:  translate3d(0,-100%, 0) ;
+            transform:  translate3d(0, -100%, 0);
+ 	}
+  
+ 
+  40% {
+	  opacity:1;
+    -webkit-transform:  translate3d(0, 0, 0) ;
+            transform:  translate3d(0, 0, 0) ;
+  }
+ 
+	60% {
+	  opacity:1;
+    -webkit-transform:  translate3d(0, 0, 0) ;
+            transform:  translate3d(0, 0, 0) ;
+  }
+  100% {
+	  opacity:1;
+    -webkit-transform:  translate3d(0, 100%, 0) ;
+            transform:  translate3d(0, 100%, 0) ;
+  }
+}
+
+
+/* animate14 14、从下平移出现，居中显示1秒，从上移动出*/
+@-webkit-keyframes animate14 {
+    0% {
+		opacity:1;
+    -webkit-transform:  translate3d(0,100%, 0) ;
+            transform:  translate3d(0,100%, 0);
+ 	}
+  
+ 
+  40% {
+	  opacity:1;
+    -webkit-transform:  translate3d(0, 0, 0) ;
+            transform:  translate3d(0, 0, 0) ;
+  }
+ 
+ 60% {
+	  opacity:1;
+    -webkit-transform:  translate3d(0, 0, 0) ;
+            transform:  translate3d(0, 0, 0) ;
+  }
+
+  100% {
+	  opacity:1;
+    -webkit-transform:  translate3d(0, -100%, 0) ;
+            transform:  translate3d(0, 100%, 0) ;
+  }
+}
+@keyframes animate14 {
+    0% {
+		opacity:1;
+    -webkit-transform:  translate3d(0, 100%, 0) ;
+            transform:  translate3d(0, 100%, 0);
+ 	}
+  
+ 
+  40% {
+	  opacity:1;
+    -webkit-transform:  translate3d(0, 0, 0) ;
+            transform:  translate3d(0, 0, 0) ;
+  }
+ 
+ 60% {
+	  opacity:1;
+    -webkit-transform:  translate3d(0, 0, 0) ;
+            transform:  translate3d(0, 0, 0) ;
+  }
+
+  100% {
+	  opacity:1;
+    -webkit-transform:  translate3d(0, -100%, 0) ;
+            transform:  translate3d(0, -100%, 0) ;
+  }
+}
+
+
+
+/* animate15 右下角进 缩小斜拉 左上角出 */
+@-webkit-keyframes animate15 {
+  0% {
+    -webkit-transform: translate3d(100%, 100%, 0) scale(0.6,0.6) skew(-20deg,30deg);
+            transform: translate3d(100%, 100%, 0) scale(0.6,0.6) skew(-20deg,30deg);
+  }
+
+  30% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.6,0.6) skew(-20deg,30deg);
+            transform: translate3d(0, 0, 0) scale(0.6,0.6) skew(-20deg,30deg);
+  }
+  
+  40% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1,1) skew(0deg,0deg);
+            transform: translate3d(0, 0, 0) scale(1,1) skew(0deg,0deg);
+  }
+  
+  60% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1,1)  skew(0deg,0deg);
+            transform: translate3d(0, 0, 0) scale(1,1)  skew(0deg,0deg);
+  }
+
+  70% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.6,0.6)  skew(30deg,-20deg);
+            transform: translate3d(0, 0, 0) scale(0.6,0.6)  skew(30deg,-20deg) ;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, -100%, 0) scale(0.6,0.6)  skew(30deg,-20deg);
+            transform: translate3d(-100%, -100%, 0) scale(0.6,0.6)  skew(30deg,-20deg);
+  }
+}
+
+@keyframes animate15 {
+  0% {
+    -webkit-transform: translate3d(100%, 100%, 0) scale(0.6,0.6) skew(-20deg,30deg);
+            transform: translate3d(100%, 100%, 0) scale(0.6,0.6) skew(-20deg,30deg);
+  }
+
+  30% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.6,0.6) skew(-20deg,30deg);
+            transform: translate3d(0, 0, 0) scale(0.6,0.6) skew(-20deg,30deg);
+  }
+  
+  40% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1,1) skew(0deg,0deg);
+            transform: translate3d(0, 0, 0) scale(1,1) skew(0deg,0deg);
+  }
+  
+  60% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1,1)  skew(0deg,0deg);
+            transform: translate3d(0, 0, 0) scale(1,1)  skew(0deg,0deg);
+  }
+
+  70% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.6,0.6)  skew(30deg,-20deg);
+            transform: translate3d(0, 0, 0) scale(0.6,0.6)  skew(30deg,-20deg) ;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, -100%, 0) scale(0.6,0.6)  skew(30deg,-20deg);
+            transform: translate3d(-100%, -100%, 0) scale(0.6,0.6)  skew(30deg,-20deg);
+  }
+}
+
+
+/* animate16 上入 -&gt; 停顿 -&gt; 上出 */
+@-webkit-keyframes animate16 {
+  0% {
+    -webkit-transform: translate3d(0, -250%, 0);
+        transform: translate3d(0, -250%, 0);
+  }
+  40% {
+    -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+  }
+  
+  50% {
+    -webkit-transform: translate3d(0, -10%, 0);
+        transform: translate3d(0, -10%, 0);
+  }
+  
+  60% {
+    -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+  }
+  
+  70% {
+    -webkit-transform: translate3d(0, 10%, 0);
+        transform: translate3d(0, 10%, 0);
+  }
+  
+  100% {
+    -webkit-transform: translate3d(0, -250%, 0);
+        transform: translate3d(0, -250%, 0);
+  }
+}
+
+@keyframes animate16 {
+  0% {
+    -webkit-transform: translate3d(0, -250%, 0);
+        transform: translate3d(0, -250%, 0);
+  }
+  40% {
+    -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+  }
+  
+  50% {
+    -webkit-transform: translate3d(0, -10%, 0);
+        transform: translate3d(0, -10%, 0);
+  }
+  
+  60% {
+    -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+  }
+  
+  70% {
+    -webkit-transform: translate3d(0, 10%, 0);
+        transform: translate3d(0, 10%, 0);
+  }
+  
+  100% {
+    -webkit-transform: translate3d(0, -250%, 0);
+        transform: translate3d(0, -250%, 0);
+  }
+}
+
+
+

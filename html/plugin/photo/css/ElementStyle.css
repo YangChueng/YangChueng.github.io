@@ -1,0 +1,443 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body { 
+margin: 0; 
+padding: 0 
+min-width: 320px; 
+font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif; 
+color: #333; 
+-webkit-text-size-adjust: none 
+} 
+
+
+html,body{width:100%;height:100%;-webkit-tap-highlight-color:rgba(255,0,0,0);background: #ebecee;}
+#content{ width:100%;height:auto;max-width: 430px;min-width: 240px;position: relative;margin:0 auto;}
+
+body{margin:0;
+     padding:0;
+	 height:100%;
+
+	 background-size:cover; z-index:-1;
+	 text-align:center;
+} 
+
+/* 主容器 DIV*/
+#content
+{
+	position: relative;
+	overflow: hidden;
+	 background: url(../images/wuyexingkong2.jpg) no-repeat center 0; 
+	 background-size: 100% 100%;
+	height:100%;
+}
+
+
+
+#bgImgDiv{
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:2;
+	background: url(images/flawer1.jpg) no-repeat center 0; 
+	background-size:cover;
+	opacity:0; 
+	filter:alpha(opacity=0);
+	
+}
+
+#bgImgDivF{
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:1;
+	background: url(images/flawer1.jpg) no-repeat center 0; 
+	background-size:cover;
+	opacity:1; 
+	filter:alpha(opacity=100);
+	
+}
+
+/* 图片容器*/
+#box
+{
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:5;
+	text-align:center;
+	animation:animate1 7s linear 0s 2 normal;
+	-webkit-animation:animate1 7s linear 0s 2 normal;
+	
+	
+}
+
+/* 图片容器*/
+.guangShuDiv
+{
+	position:absolute;
+	z-index: 30;
+	top: -10%;
+	left: -10%;
+	background: url(../images/guangxian.png) no-repeat no-repeat center;
+	background-size:100% 100%;
+	height: 100%;
+	width: 100%;
+	-webkit-animation: guangShu 5s linear infinite alternate;
+	animation: guangShu 5s linear infinite alternate;
+	
+}
+
+
+/*展示图片*/
+#image
+{
+	width:100%;
+	height:auto;
+	position:absolute;
+	left:0px;
+	top:10%;
+
+}
+
+/* 气泡大*/
+.qiPaoDa
+{
+	position:absolute;
+	z-index: 10;
+	top: 100%;
+	left:15%;
+	background: url(../images/qiPaoDa.png) no-repeat no-repeat center;
+	background-size:100px 100px;
+	height: 100px;
+	width: 100px;
+	-webkit-animation: qiPao 30s linear infinite;
+	animation: qiPao 30s linear infinite;
+}
+
+/* 气泡 小*/
+.qiPaoXiao
+{
+	position:absolute;
+	z-index: 10;
+	top: 100%;
+	left: 50%;
+	background: url(../images/qiPaoDa.png) no-repeat no-repeat center;
+	background-size:60px 60px;
+	height: 60px;
+	width: 60px;
+	-webkit-animation: qiPao 33s linear infinite;
+	animation: qiPao 33s linear infinite;
+}
+
+/* 气泡 大大*/
+.qiPaoDaDa
+{
+	position:absolute;
+	z-index: 10;
+	top: 100%;
+	left: 50%;
+	background: url(../images/qiPaoDa.png) no-repeat no-repeat center;
+	background-size:140px 140px;
+	height: 140px;
+	width: 140px;
+	-webkit-animation: qiPao 30s linear infinite;
+	animation: qiPao 30s linear infinite;
+}
+
+/* 花瓣1*/
+.flowerone
+{
+	position:absolute;
+	z-index: 10;
+	top: 15%;
+	left: 15%;
+	background: url(../images/huaban.png) no-repeat no-repeat center;
+	background-size:36px 36px;
+	height: 35px;
+	width: 35px;
+	-webkit-animation: flowerSmall 20s linear infinite;
+	animation: flowerSmall 20s linear infinite;
+}
+
+/* 花瓣 2 */
+.flowertwo
+{
+	position:absolute;
+	z-index: 11;
+	top: -10%;
+	left: 40%;
+	background: url(../images/huaban.png) no-repeat no-repeat center;
+	background-size:36px 36px;
+	height: 35px;
+	width: 35px;
+	-webkit-animation: flowerTwo 22s ease-in-out infinite;
+	animation: flowerTwo 22s ease-in-out infinite;
+	
+}
+
+/*花瓣 三*/
+.flowerthree
+{
+	position:absolute;
+	z-index: 12;
+	top: -10%;
+	left: 80%;
+	background: url(../images/huaban.png) no-repeat no-repeat center;
+	background-size:36px 36px;
+	height: 35px;
+	width: 35px;
+	-webkit-animation: flowerThree 21s ease-in-out infinite;
+	animation: flowerThree 21s ease-in-out infinite;
+	
+}
+
+/* 绿叶1*/
+.lvyeone
+{
+	position:absolute;
+	z-index: 10;
+	top: 100%;
+	left: 50%;
+	background: url(../images/pugongying1.png) no-repeat no-repeat center;
+	background-size:40px 52px;
+	height: 40px;
+	width: 52px;
+	
+	-webkit-animation: qiPao 28s linear infinite;
+	animation: qiPao 28s linear infinite;
+}
+
+/* 绿叶 2 */
+.lvyetwo
+{
+	position:absolute;
+	z-index: 10;
+	top: 100%;
+	left: 50%;
+	background: url(../images/pugongying1.png) no-repeat no-repeat center;
+	background-size:40px 52px;
+	height: 40px;
+	width: 52px;
+	transform:rotate(30deg);
+	-webkit-transform:rotate(30deg);
+	-webkit-animation: qiPao 33s linear infinite;
+	animation: qiPao 33s linear infinite;
+	
+}
+
+/*绿叶 三*/
+.lvyethree
+{
+	position:absolute;
+	z-index: 10;
+	top: 100%;
+	left: 50%;
+	background: url(../images/pugongying2.png) no-repeat no-repeat center;
+	background-size: 52px 38px;
+	width: 50px;
+	height: 38px;
+	-webkit-animation: qiPao 37s linear infinite;
+	animation: qiPao 37s linear infinite;
+	
+}
+
+/* 雪花小 1*/
+.snowSmall
+{
+	position:absolute;
+	z-index: 10;
+	top: 15%;
+	left: 15%;
+	background: url(../images/snowFlowerXZ.png) no-repeat no-repeat center;
+	background-size:30px 30px;
+	width: 30px;
+	height:30px;
+	-webkit-animation: topToDown 30s linear infinite;
+	animation: topToDown 30s linear infinite;
+}
+
+/* 雪花 大 1*/
+.snowBig
+{
+	position:absolute;
+	z-index: 10;
+	top: 15%;
+	left: 15%;
+	background: url(../images/snowFlowerXZ.png) no-repeat no-repeat center;
+	background-size:35px 35px;
+	width: 35px;
+	height: 35px;
+	-webkit-animation: topToDown 20s linear infinite;
+	animation: topToDown 20s linear infinite;
+}
+
+/* 雪花 旋转 1*/
+.snowXZ
+{
+	position:absolute;
+	z-index: 10;
+	top: 15%;
+	left: 15%;
+	background: url(../images/snowFlowerXZ.png) no-repeat no-repeat center;
+	background-size:35px 35px;
+	width: 35px;
+	height: 35px;
+	-webkit-animation: flowerSmall 25s linear infinite;
+	animation: flowerSmall 25s linear infinite;
+}
+
+/* 白云后面的小 慢*/
+.cloudSmall
+{
+	position:absolute;
+	z-index: 28;
+	top: 2%;
+	left: 10%;
+	background: url(../images/cloudSmall.png) no-repeat no-repeat center;
+	background-size:84px 46px;
+	width: 84px;
+	height: 46px;	
+	-webkit-animation: cloudSmall 35s linear infinite;
+	animation: cloudSmall 35s linear infinite;
+	
+}
+
+/* 白云后面的大 快*/
+.cloudBig
+{
+	position:absolute;
+	z-index: 30;
+	top: 15%;
+	left: 10%;
+	background: url(../images/cloudBig.png) no-repeat no-repeat center;
+	background-size:140px 70px;
+	height: 70px;
+	width: 140px;
+	-webkit-animation: cloudBig 30s linear infinite;
+	animation: cloudBig 30s linear infinite;
+	
+}
+
+/*音乐按钮 */
+.musicBtn
+{
+	position:absolute;
+	top:3%;
+	right:3%;
+	z-index:40;
+	height:28px;
+	width:28px;	
+	-webkit-animation:musicPlay 2s linear 0s infinite normal;
+	animation:musicPlay 2s linear 0s infinite normal;
+}
+
+
+
+/* 星星1 */
+.xingXing1
+{
+	position:absolute;
+	z-index: 2;
+	top: 15%;
+	left: 15%;
+	background: url(../images/xingxing.png) no-repeat no-repeat center;
+	background-size:28px 28px;
+	width: 28px;
+	height: 28px;
+	-webkit-animation: xingxing 3s linear infinite alternate;
+	animation: xingxing 3s linear infinite alternate;	
+}
+
+/* 星星2 */
+.xingXing2
+{
+	position:absolute;
+	z-index: 2;
+	top: 15%;
+	left: 15%;
+	background: url(../images/xingxing.png) no-repeat no-repeat center;
+	background-size:35px 35px;
+	width: 35px;
+	height: 35px;
+	-webkit-animation: xingxing 2s linear infinite alternate;
+	animation: xingxing 2s linear infinite alternate;	
+}
+
+/* 星星3 */
+.xingXing3
+{
+	position:absolute;
+	z-index: 2;
+	top: 15%;
+	left: 15%;
+	background: url(../images/xingxing.png) no-repeat no-repeat center;
+	background-size:40px 40px;
+	width: 40px;
+	height: 40px;
+	-webkit-animation: xingxing 1s linear infinite alternate;
+	animation: xingxing 1s linear infinite alternate;	
+}
+
+/* 星星3 */
+.yinhe
+{
+	position:absolute;
+	z-index: 2;
+	top: 0%;
+	left: 0%;
+	background: url(../images/yinhe.png) no-repeat no-repeat top left;
+	background-size:90% 50%;
+	width: 90%;
+	height: 50%;
+	-webkit-animation: xingxing 10s linear infinite alternate;
+	animation: xingxing 10s linear infinite alternate;	
+}
+
+
+/* 雨滴1*/
+.yudione
+{
+	position:absolute;
+	z-index: 10;
+	top: 15%;
+	left: 15%;
+	background: url(../images/yudi1.png) no-repeat no-repeat center;
+	background-size:55px 55px;
+	height: 54px;
+	width: 54px;
+	-webkit-animation: yuditopToDown 45s linear infinite;
+	animation: yuditopToDown 45s linear infinite;
+}
+
+/* 雨滴 2 */
+.yuditwo
+{
+	position:absolute;
+	z-index: 11;
+	top: -10%;
+	left: 40%;
+	background: url(../images/yudi2.png) no-repeat no-repeat center;
+	background-size:38px 45px;
+	height: 42px;
+	width: 45px;
+	-webkit-animation: yuditopToDown 35s ease-in-out infinite;
+	animation: yuditopToDown 35s ease-in-out infinite;
+	
+}
+
+/*雨滴三*/
+.yudithree
+{
+	position:absolute;
+	z-index: 12;
+	top: -10%;
+	left: 80%;
+	background: url(../images/yudi3.png) no-repeat no-repeat center;
+	background-size:40px 45px;
+	height: 40px;
+	width: 45px;
+	-webkit-animation: yuditopToDown 30s ease-in-out infinite;
+	animation: yuditopToDown 30s ease-in-out infinite;
+	
+}
