@@ -30,7 +30,7 @@ function createHtmlElement(left,classname,top)
 function setBackGroundImage(imageName)
 {
 	//设置背景图片
-	var bgStr = "url(../images/"+imageName +")";
+	var bgStr = "url(./images/"+imageName +")";
 	var x =  document.getElementById("bgImgDivF");
 	x.style.backgroundImage = bgStr;	
 }
@@ -39,7 +39,7 @@ function setBackGroundImage(imageName)
 function setDivBackGroundImage(imageName)
 {
 	//设置背景图片
-	var bgStr = "url(../images/"+imageName +")";
+	var bgStr = "url(./images/"+imageName +")";
 	var x =  document.getElementById("bgImgDiv");
 	x.style.backgroundImage = bgStr;	
 }
