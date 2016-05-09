@@ -236,3 +236,35 @@ a{
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
 }
+
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: none;
+    z-index: 100;
+    opacity:0.8;
+    text-align: center;
+}
+
+.layer input{
+	border:1px solid #ccc;
+	margin:0 auto;
+	position:relative;
+	top:45%;
+	height:30px;
+	line-height: 30px;
+}
+
+.layer input:focus{
+	outline: none;
+}
+
+.layer .enter{
+	    background: #ccc;
+    width: 60px;
+    cursor: pointer;
+}

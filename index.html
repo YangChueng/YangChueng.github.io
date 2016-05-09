@@ -29,7 +29,7 @@
 		</div>
 		<div class="section">
 			<div class="content">
-				<a href="html/plugin/photo/photo.html">音乐照片</a>
+				<a href="#" id="musicPhoto">音乐照片</a>
 			</div>
 		</div>
 		<div class="section"></div>
@@ -41,13 +41,35 @@
 		</div>
 		<div class="section"></div>
 	</div>
+	<div class="layer">
+		<input type="password" value="" placeholder="请输入密码">
+		<input type="button" class="enter" value="Enter">
+	</div>
 	<script src="js/lib/jquery.min.js"></script>
+	<script type="text/ecmascript" src="js/lib/sha1.js"></script>
 	<script src="js/plugin/jquery.fullPage.min.js"></script>
 	<script>
 		$(function(){
 		    $('.main').fullpage({
 		    	navigation:true,
 		    	anchors: ['page1', 'page2', 'page3', 'page4','page5']
+		    });
+
+		    $('#musicPhoto').on('click',function(){
+		    	var url = "html/plugin/photo/photo.html";
+		    	$('.layer').show();
+
+
+		    	$('.layer .enter').click(function(e){
+			    	var password = $('.layer input').val();
+			    	var sha = hex_sha1(password);
+			    	if('041d40047e13e9d2f5c490f5d799dac17704a594' == sha){
+			    		document.location.href="";
+			    	}else{
+			    		alert('Password is Wrong!');
+			    		$('.layer').hide();
+			    	}
+		    	});
 		    });
 		});
 	</script>
