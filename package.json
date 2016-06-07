@@ -1,0 +1,10 @@
+{
+  "name": "AngularSys",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1"
+  }
+}
