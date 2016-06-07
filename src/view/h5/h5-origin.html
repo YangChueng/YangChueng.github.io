@@ -1,0 +1,42 @@
+<div class="container" ng-controller="h5OriginController as hoCtrl">
+    <div class="hbox hbox-auto-xs hbox-auto-sm">
+        <!-- .col -->
+        <div class="col w-lg bg-light dk b-r bg-auto" id="aside">
+            <div class="wrapper bg b-b">
+                <h3 class="m-n font-thin">目录结构</h3>
+            </div>
+            <div class="wrapper">
+            </div>
+        </div>
+        <!-- /.col -->
+        <!-- .col -->
+        <div class="col">
+            <div class="wrapper">
+                <!-- timeline-center 居中-->
+                <ul class="timeline">
+                    <li class="tl-header">
+                        <div class="btn btn-info">Now</div>
+                    </li>
+                    <li class="tl-item" ng-repeat="w in dataset">
+                        <div class="tl-wrap b-primary">
+                            <span class="tl-date">{{w.date}}</span>
+                            <div class="tl-content panel padder b-a w-auto-xs">
+                                <span class="arrow left pull-up"></span>
+                                <div class="text-lt m-b-sm clear">{{w.title}}
+									<a href="#" class="btn m-b-xs w-xs btn-info btn-rounded pull-right">read</a>
+                                </div>
+                                <div class="panel-body pull-in b-t b-light">
+                                    <div class="">{{w.desc}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tl-header">
+                        <div class="btn btn-sm btn-default btn-rounded">more</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

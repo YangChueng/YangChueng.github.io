@@ -1,31 +1,60 @@
 <!-- list -->
 <ul class="nav">
-  <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
-    <span translate="aside.nav.components.COMPONENTS">组件</span>
-  </li>
- 
-  <li ng-class="{active:$state.includes('app.ui')}">
-    <a href class="auto">
-      <span class="pull-right text-muted">
-        <i class="fa fa-fw fa-angle-right text"></i>
-        <i class="fa fa-fw fa-angle-down text-active"></i>
-      </span>
-      <i class="glyphicon glyphicon-briefcase icon"></i>
-      <span translate="aside.nav.components.ui_kits.UI_KITS">视图</span>
-    </a>
-    <ul class="nav nav-sub dk">
-      <li class="nav-sub-header">
-        <a href>
-          <span translate="aside.nav.components.ui_kits.UI_KITS">UI Kits</span>
+    <!--菜单一 -->
+    <li ng-class="{active:$state.includes('app.h5')}">
+        <a href class="auto" ui-sref="app.h5">
+            <span class="pull-right text-muted">
+              <i class="fa fa-fw fa-angle-right text"></i>
+              <i class="fa fa-fw fa-angle-down text-active"></i>
+             </span>
+            <i class="fa fa-html5"></i>
+            <span>HTML5</span>
         </a>
-      </li>
-      <li ui-sref-active="active">
-        <a ui-sref="app.ui.buttons">
-          <span translate="aside.nav.components.ui_kits.BUTTONS">按钮</span>
+        <ul class="nav nav-sub dk">
+            <li ui-sref-active="active">
+                <a ui-sref="app.h5.origin">
+                    <span>原创</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.h5.transfer">
+                    <span>转载</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.h5.news">
+                    <span>新闻</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <!--菜单二 -->
+    <li ng-class="{active:$state.includes('app.css3')}">
+        <a href class="auto" ui-sref="app.css3">
+            <span class="pull-right text-muted">
+              <i class="fa fa-fw fa-angle-right text"></i>
+              <i class="fa fa-fw fa-angle-down text-active"></i>
+             </span>
+            <i class="fa fa-css3"></i>
+            <span>CSS3</span>
         </a>
-      </li>
-    </ul>
-  </li>
-
+        <ul class="nav nav-sub dk">
+            <li ui-sref-active="active">
+                <a ui-sref="app.css3.origin">
+                    <span>原创</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.css3.transfer">
+                    <span>转载</span>
+                </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.css3.news">
+                    <span>新闻</span>
+                </a>
+            </li>
+        </ul>
+    </li>
 </ul>
 <!-- / list -->

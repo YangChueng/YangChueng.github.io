@@ -1,4 +1,5 @@
 'use strict';
-angular.module('app', [
-    'ui.router'
+var Vince = angular.module('app', [
+    'ui.router',
+    'oc.lazyLoad'
 ]);
