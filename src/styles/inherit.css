@@ -1,0 +1,13 @@
+.fr{
+	float:right;
+}
+
+.fl{
+	float:left;
+}
+
+.clearfix:after{
+	content:"";
+	display:table;
+	clear:both;
+};
