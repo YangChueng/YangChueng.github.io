@@ -1,0 +1,254 @@
+<div class="wrapper">
+    <div class="content">
+        <div class="clearfix">
+            <a class="you-button fr" ng-click="mainCtrl.viewCSScode($event)" data-you-show="true">View CSS Code</a>
+        </div>
+        <div class="button-wrapper">
+            <h1>CSS3动画和过渡的按钮--Part 1</h1>
+            <hr>
+            <div class="block clearfix">
+                <a href="javascript:;" class="a-btn">
+                    <span class="a-btn-slide-text">$29</span>
+                    <img src="src/images/1.png" alt="Photos">
+                    <span class="a-btn-text"><small>Available on the Apple</small> App Store</span>
+                    <span class="a-btn-icon-right"><span></span></span>
+                </a>
+                <pre><code class="language-css">//重点样式
+.a-btn{
+    background:#a9db80;
+    /**渐变背景色*/
+    background:-webkit-gradient(linear,left top,left bottom,
+        color-stop(#a9db80,0),color-stop(#96c56f,1));
+    background:linear-gradient(top, #a9db80 0%, #96c56f 100%);
+    padding-left:90px;
+    padding-right:105px;
+    height:90px;
+    display:inline-block;
+    position:relative;
+    border:1px solid #80ab5d;
+    /**阴影*/
+    box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 
+        1px 1px 3px rgba(0,0,0,0.2);
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    float:left;
+    clear:both;
+    margin:10px 0px;
+    overflow:hidden;
+    /**盒子阴影过渡 */
+    transition:box-shadow 0.3s ease-in-out;
+}
+
+.a-btn img{
+    position:absolute;
+    left:15px;
+    top:13px;
+    border:none;
+    transition:all 0.3s ease-in-out;
+}
+
+/** 鼠标悬浮-有阴影加重的效果*/
+.a-btn:hover{
+    box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 
+        1px 1px 5px rgba(0,0,0,0.4);
+}
+/**鼠标悬浮 图片放大透明--对应过渡 transition:all 0.3s ease-in-out */
+.a-btn:hover img{
+    transform:scale(10);
+    opacity:0;
+}
+/**点击时效果 */
+.a-btn:active{
+    position:relative;
+    top:1px;
+    background:#80ab5d;
+    box-shadow:1px 1px 2px rgba(0,0,0,0.4) inset;
+    border-color:#a9db80;
+}
+/** 点击箭头放大 */
+.a-btn:active .a-btn-icon-right span{
+    transform:scale(1.4);
+}
+                </code>
+            </pre>
+            </div>
+            <!-- 2-->
+            <h1>CSS3动画和过渡的按钮--Part 2</h1>
+            <hr>
+            <div class="block clearfix">
+                <a href="javascript:;" class="y-btn">
+                    <span></span>
+                    <span>Join Now</span>
+                    <span>It's free!</span>
+                </a>
+                <pre><code class="language-css">/**
+ * 动画按钮2
+ */
+.y-btn{
+    width:120px;
+    height:120px;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    display:block;
+    margin:20px;
+    float:left;
+    background:#f0ad4e;
+    position:relative;
+    box-shadow:0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset, 
+            0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset, 
+            0px 0px 0px 7px #fff,  
+            0px 0px 1px 8px rgba(188, 188, 188, 0.4), 
+            0px 0px 0px 9px #fff;
+    /**所有过渡状态有3s的线性渐变 */
+    transition:all 0.3s linear;
+}
+.y-btn span{
+    display:table-cell;
+    width:80px;
+    height:80px;
+    padding:20px;
+    text-align:center;
+    vertical-align:middle;
+    font-size:26px;
+    color:#fff;
+    text-shadow:0px 1px 1px #A03F16;
+    font-family:"Arvo", "Myriad Pro", "Trebuchet MS", sans-serif;
+    transition:all 0.3s linear;
+}
+.y-btn span:nth-child(1), 
+.y-btn span:nth-child(3){
+    position:absolute;
+    top:0px;
+    left:0px;
+    font-size:40px;
+    line-height:36px;
+    opacity:0;
+}
+.y-btn span:nth-child(1){
+    background:transparent url(../images/star.png) no-repeat center center;
+    opacity:0.2;
+}
+.y-btn:hover{
+    background:rgba(170, 77, 27, 0.6);
+    box-shadow:0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset, 
+            0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset, 
+            0px 0px 0px 7px #fff,  
+            1px 4px 5px 8px rgba(188, 188, 188, 0.6), 
+            0px 0px 0px 9px #fff;
+}
+.y-btn:hover span:nth-child(3){
+    /**鼠标悬浮 显示最后一个dom节点*/
+    opacity:1;
+}
+.y-btn:hover span:nth-child(2){
+    /**鼠标悬浮 第2个dom节点设为透明*/
+    opacity: 0;
+    transform: scale(0);
+}
+.y-btn:hover span:nth-child(1){
+    /**第一个节点即图片有个1s旋转缩放动画 */
+    -webkit-animation:rotate 1s linear;
+    -moz-animation:rotate 1s linear;
+    animation:rotate 1s linear;
+}
+.y-btn:active{
+    box-shadow:0px 0px 5px 0px rgba(246, 212, 163, 0.5) inset, 
+            0px -1px 5px 4px rgba(170, 77, 27, 0.2) inset, 
+            0px 0px 0px 7px #fff,  
+            0px -1px 0px 8px rgba(188, 188, 188, 0.3), 
+            0px 0px 0px 10px #fff;
+}
+.y-btn:active span:nth-child(2){
+    color:rgba(170, 77, 27, 0.8);
+    text-shadow:0px 1px 1px rgba(255, 255, 255, 0.6);
+}
+@keyframes rotate{
+    0% { transform: scale(1) rotate(0);}
+    50% { transform: scale(0.5) rotate(180deg);}
+    100% { transform: scale(1) rotate(360deg);}
+}                 
+                    </code>
+                </pre>
+            </div>
+            <!--/ 2-->
+            <!-- 3-->
+            <h1>CSS3动画和过渡的按钮--Part 3</h1>
+            <hr>
+            <div class="block">
+                <a href="javascript:;" class="c-btn">
+                    <span class="a-btn-text">Download Now</span>
+                    <span class="a-btn-slide-text">Windows Vista / Windows 7</span>
+                </a>
+                <pre><code class="language-css">.c-btn{
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    padding:10px 30px 10px 70px;
+    position:relative;
+    float:left;
+    display:block;
+    overflow:hidden;
+    margin:10px;
+    background:#9cedef;
+    background:-webkit-gradient(linear,left top,left bottom,
+            color-stop(#b7f2f4,0),
+            color-stop(#7ce7ea,1));
+    background:linear-gradient(top, #b7f2f4 0%, #7ce7ea 100%);
+    border:1px solid #90c6c8;
+    border-color:#90c6c8 #78bdc0 #65b6ba;
+    box-shadow:0px -5px 0px 0px #458a8c, 0 1px 1px #d5d5d5, 
+            inset 0 1px 0 rgba(255,255,255,0.8);
+    transition:all 0.2s linear;
+}
+.c-btn-symbol{
+    color:#437b7d;
+    text-shadow:0 1px 0 #bef3f5;
+    font-size:20px;
+    position:absolute;
+    left:20px;
+    width:20px;
+    text-align:center;
+    line-height:32px;
+    transition:all 0.3s ease-in-out;
+}
+.c-btn-text{
+    font-size:20px;
+    color:#437b7d;
+    text-shadow:0 1px 0 #bef3f5;
+    line-height:16px;
+    font-weight:bold;
+    display:block;
+}
+.c-btn-slide-text{
+    font-family:Arial, sans-serif;
+    font-size:10px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:#555;
+    text-shadow:0px 1px 1px rgba(255,255,255,0.9);
+}
+.c-btn:hover{
+    -webkit-transform:scale(1.05);
+    transform:scale(1.05);
+}
+.c-btn:hover .a-btn-symbol{
+    opacity:0.5;
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+.c-btn:active{
+    transform:scale(0.95);
+    box-shadow:0px 0px 0px 1px #458a8c, 0 1px 1px #d5d5d5, 
+            inset 0 1px 0 rgba(255,255,255,0.8), 
+            0px 1px 1px 2px #fff;
+}
+                    
+                </code></pre>
+            </div>
+            <!-- /3-->
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="src/js/plugin/prism.js"></script>

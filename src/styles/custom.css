@@ -1,0 +1,146 @@
+.app {
+    height: 100%;
+}
+
+.wrapper h1 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #aaa;
+}
+
+.content {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.button-wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 0px!important;
+}
+
+pre {
+    display: inline-block;
+    width: 540px;
+    max-height: 0;
+    margin-left: 2em!important;
+    overflow-x: hidden!important;
+    box-shadow: 0 0 4px #114;
+    float: right;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    opacity: 0;
+}
+
+pre.showCssAnimation {
+    max-height: 640px;
+    opacity: 1;
+}
+
+pre.hideCssAnimation {
+    max-height: 0;
+    opacity: 0;
+}
+
+.clearfix:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.you-button {
+    text-decoration: none;
+    font: 24px/1em 'Droid Sans', sans-serif;
+    font-weight: bold;
+    text-shadow: rgba(255, 255, 255, .5) 0 1px 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    padding: .5em .6em .4em .6em;
+    margin: .5em .5em .5em 2em;
+    display: inline-block;
+    position: relative;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-image: -webkit-gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255, 255, 255, 0)), to( rgba(255, 255, 255, 0.7))), url(../images/noise.png);
+    background-image: -moz-radial-gradient(top, ellipse cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%), url(../images/noise.png);
+    background-image: gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255, 255, 255, 0)), to( rgba(255, 255, 255, 0.7))), url(../images/noise.png);
+    -webkit-transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    transition: background .2s ease-in-out;
+    color: hsl(0, 0%, 40%) !important;
+    background-color: hsl(0, 0%, 75%);
+    -webkit-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(0, 0%, 60%) 0 .1em 3px, hsl(0, 0%, 45%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    -moz-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(0, 0%, 60%) 0 .1em 3px, hsl(0, 0%, 45%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(0, 0%, 60%) 0 .1em 3px, hsl(0, 0%, 45%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    cursor: pointer;
+}
+
+.you-button:before {
+    font: 1.2em/0 'Pictos', sans-serif;
+    content: attr(data-icon);
+    margin-right: 0.4em;
+}
+
+.you-button:active {
+    background-image: -webkit-gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255, 255, 255, 0)), to( rgba(255, 255, 255, 0))), url(../images/noise.png);
+    background-image: -moz-gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255, 255, 255, 0)), to( rgba(255, 255, 255, 0))), url(../imagesnoise.png);
+    background-image: gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255, 255, 255, 0)), to( rgba(255, 255, 255, 0))), url(noise.png);
+    -webkit-box-shadow: inset rgba(255, 255, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.2) 0 -0.1em .3em, /* inner shadow */
+    rgba(0, 0, 0, 0.4) 0 .1em 1px, /* border */
+    rgba(0, 0, 0, 0.2) 0 .2em 6px;
+    -moz-box-shadow: inset rgba(255, 255, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.2) 0 -0.1em .3em, /* inner shadow */
+    rgba(0, 0, 0, 0.4) 0 .1em 1px, /* border */
+    rgba(0, 0, 0, 0.2) 0 .2em 6px;
+    box-shadow: inset rgba(255, 255, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.2) 0 -0.1em .3em, /* inner shadow */
+    rgba(0, 0, 0, 0.4) 0 .1em 1px, /* border */
+    rgba(0, 0, 0, 0.2) 0 .2em 6px;
+    -webkit-transform: translateY(.2em);
+    -moz-transform: translateY(.2em);
+    transform: translateY(.2em);
+}
+
+.header-menu {
+    width: 40px;
+    margin-left: 1em;
+    display: none;
+}
+
+.header-menu img {
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
+@media (max-width: 1200px) {
+    .left-column {
+        width: 0;
+    }
+    .header-menu {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        cursor:pointer;
+    }
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 768px) {}
+
+@media (max-width: 767px) {}
