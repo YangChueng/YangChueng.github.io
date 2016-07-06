@@ -56,5 +56,26 @@ Young.config(function($stateProvider, $urlRouterProvider) {
         .state('clib.animation.loading', {
             url: '/loading',
             templateUrl: 'src/pages/module/animation/loading.html'
-        });
+        })
+        /**
+         * 图片
+         */
+        .state('clib.image', {
+            url: '/image',
+            template: '<div ui-view></div>'
+        })
+        .state('clib.image.gallery', {
+            url: '/gallery',
+            templateUrl: 'src/pages/module/image/gallery.html',
+            resolve: {
+                deps: function($ocLazyLoad) {
+                    return $ocLazyLoad.load(['src/js/plugin/modernizr.js', 'src/js/plugin/jquery.gallery.js'])
+                }
+            }
+        })
+
+    .state('clib.editor', {
+        url: '/editor',
+        templateUrl: 'src/pages/module/editor/editor.html'
+    });
 });

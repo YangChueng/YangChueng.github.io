@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="CSS3LibApp">
+<html lang="en" data-ng-app="WebComposerApp">
 
 <head>
     <meta charset="utf-8" />
@@ -10,6 +10,9 @@
     <link rel="stylesheet" type="text/css" href="src/styles/common.css">
     <link rel="stylesheet" type="text/css" href="src/styles/inherit.css">
     <link rel="stylesheet" type="text/css" href="src/styles/custom.css">
+    <script type="text/javascript" src="src/js/plugin/ue/ueditor.config.js"></script>
+    <script type="text/javascript" src="src/js/plugin/ue/ueditor.all.min.js"></script>
+    <script type="text/javascript" src="src/js/plugin/ue/lang/zh-cn/zh-cn.js"></script>
 </head>
 
 <body ng-controller="CSS3LibCtrl as mainCtrl">
@@ -22,10 +25,10 @@
     <script type="text/javascript" src="src/js/vender/angular-ui-router/angular-ui-router.js"></script>
     <!-- lazyload -->
     <script type="text/javascript" src="src/js/vender/ocLazyLoad.js"></script>
-    
     <script type="text/javascript" src="src/js/common/app.js"></script>
     <script type="text/javascript" src="src/js/common/config.js"></script>
     <script type="text/javascript" src="src/js/common/main.js"></script>
+    <script type="text/javascript" src="src/js/common/controller/UEEditorController.js"></script>
 </body>
 
 </html>
