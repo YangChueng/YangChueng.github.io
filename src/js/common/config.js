@@ -76,6 +76,6 @@ Young.config(function($stateProvider, $urlRouterProvider) {
 
     .state('clib.editor', {
         url: '/editor',
-        templateUrl: 'src/pages/module/editor/editor.html'
+        templateUrl: 'src/editor/index.html'
     });
 });

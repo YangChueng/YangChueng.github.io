@@ -1,4 +1,8 @@
 <div ng-controller="UEEditorController as ueCtrl">
     <script id="young-editor" type="text/plain" style="width:1024px;height:500px;"></script>
-    <a href="javascript:;" class="you-button fr" ng-click="ueCtrl.submit()">提交</a>
+    <a href="javascript:;" class="you-button" ng-click="ueCtrl.submit()">提交</a>
+    <script type="text/javascript" src="src/js/plugin/prism.js"></script>
+    <script type="text/javascript">
+    	var ue = UE.getEditor('young-editor');
+    </script>
 </div>
