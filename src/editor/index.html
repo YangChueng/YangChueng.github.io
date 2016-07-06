@@ -1,15 +1,9 @@
-<link rel="stylesheet" type="text/css" href="src/editor/dist/css/wangEditor.min.css">
-<link rel="stylesheet" type="text/css" href="src/editor/highlightJS/styles/monokai.css">
-<script type="text/javascript" src="src/editor/dist/js/wangEditor.min.js"></script>
-<div id="youngEditor" style="height:500px!important;max-height:600px;">
+<div ng-controller="EditorController as eCtrl">
+    <link rel="stylesheet" type="text/css" href="src/editor/dist/css/wangEditor.min.css">
+    <link rel="stylesheet" type="text/css" href="src/editor/highlightJS/styles/monokai.css">
+    <script type="text/javascript" src="src/editor/dist/js/wangEditor.min.js"></script>
+    <div id="youngEditor" style="height:500px!important;max-height:600px;"></div>
+    <div class="text-center">
+    	<a href="javascript:;" class="you-button" ng-click="eCtrl.submit()">提交</a>
+    </div>
 </div>
-<!--这里引用jquery和wangEditor.js-->
-<script type="text/javascript">
-var editor = new wangEditor('youngEditor');
-editor.config.familys = ['黑体'];
-
-// 字号
-editor.config.fontsizes = { 1: '16px'};
-editor.create();
-
-</script>
