@@ -21,5 +21,6 @@ Young.controller('EditorController', ['$scope', function($scope) {
     this.submit = function(){
     	var html = editor.$txt.html();
     	console.log(html);
+    	document.write(html)
     }
 }]);
